@@ -1,17 +1,23 @@
 # Collections
 
-This repository contains the code and structure for processing Reef Archive image collections.
+This repository contains the code and structure for processing Reef Archive Data Packages.
 
 ## Structure
 
 Each image collection receives its own designated folder and is structured accordingly:
 
-> ```
+```
 collections/ # This repository
 ├── collection/ # Name of specific collection
-│ ├── R/ # Related R scripts for processing collection
-│ ├── source/ # Original images, data, and associated files
-│ └── datapackage/ # Processed collection following data package standard
+│ ├── v1-0-0/ # Version of the collection release
+│ │ ├── R/ # Related R scripts for processing/updating collection
+│ │ ├── source/ # Original images, data, and associated files (if version 1.0.0)
+│ │ ├── processed/ # Processed images, data, and associated files (if version 1.0.0)
+│ │ └── collection.zip # Compressed zip file of the collection i.e. processed (a Reef Archive Data Package)
+│ ├── v1-0-1/ # Version of the collection release
+│ │ ├── R/ # Related R scripts for processing/updating collection
+│ │ ├── collection/ # Collection images, data, and associated files
+│ │ └── collection.zip # Compressed zip file of the collection (a Reef Archive Data Package)
 ```
 
 ## Naming convention
