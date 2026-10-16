@@ -8,21 +8,10 @@ Each image collection receives its own designated folder and is structured accor
 
 ```
 collections/ # This repository
-├── collection/ # Name of specific collection
-│ ├── v1-0-0/ # Version of the collection release
-│ │ ├── R/ # Related R scripts for processing/updating collection
-│ │ ├── source/ # Original images, data, and associated files (if version 1.0.0)
-│ │ ├── processed/ # Processed images, data, and associated files (if version 1.0.0)
-│ │ └── collection.zip # Compressed zip file of the collection i.e. processed (a Reef Archive Data Package)
-│ ├── v1-0-1/ # Version of the collection release
-│ │ ├── R/ # Related R scripts for processing/updating collection
-│ │ ├── collection/ # Collection images, data, and associated files
-│ │ └── collection.zip # Compressed zip file of the collection (a Reef Archive Data Package)
+├── collection/          Name of specific collection (e.g. "RADP0001")
+│ ├── README.md/         High-level metadata about the collection
+│ ├── datapackage.json   Machine-readable description of the package and data dictionary
+│ ├── media.csv          Metadata table, one row per image (1,447 rows, 31 columns)
+│ └── media/             Image files, named <fileName>.<extension> (e.g. IMG0001.png)
 ```
-
-## Naming convention
-
-[Location]-[Country]-[From]-[To]-[Author]
-
- > DiscoveryBay-Jamaica-1966-1968-EileenGraham
 

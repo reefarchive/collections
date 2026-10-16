@@ -69,6 +69,7 @@ Questions, corrections, and additional information about the images (for example
 
 **1.0.2 (2026-10-07):**
 
+  - Within `datapackage.json`, the schema is now externally linked
   - Added `time` field
   - Added `depthRemarks` field
 
